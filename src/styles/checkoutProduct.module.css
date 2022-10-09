@@ -1,0 +1,95 @@
+.checkoutProduct {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px 10px;
+    border-bottom: 1px solid darkgray;
+
+}
+.checkoutProduct__image {
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+}
+
+.checkoutProduct__info {
+    padding-left: 30px;
+    flex: 1;
+}
+.checkoutProduct__containerTitlePrice {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 80px;
+}
+.checkoutProduct__title{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+.checkoutProduct__price {
+    font-size: 1.3rem;
+}
+.checkoutProduct__rating {
+    display: flex;
+}
+.checkoutProduct__options {
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 15px;
+}
+.checkoutProduct__select, .checkoutProduct__input {
+    height: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid darkgray;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition-duration: .2s;
+}
+.checkoutProduct__select:focus, .checkoutProduct__select:hover {
+    border-color: #006F82;
+    box-shadow: #C8F3FA 0px 0px 4px 3px;
+}
+.checkoutProduct__removeButton, .checkoutProduct__updateButton {
+    height: 100%;
+    background-color: var(--orange);
+    border: 1px solid;
+    border-color: var(--borderColor);
+    color: #111;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition-duration: .2s;
+}
+.checkoutProduct__removeButton:focus, .checkoutProduct__removeButton:hover, .checkoutProduct__updateButton:focus, .checkoutProduct__updateButton:hover {
+    box-shadow: var(--orange) 0px 0px 4px 3px;
+    background-color: rgb(247, 192, 90);
+}
+
+/* Container de Input y Boton */
+.checkoutProduct__containerInputButtonUpdate {
+    height: 100%;
+}
+/* Boton */
+.checkoutProduct__updateButton {
+    margin-left: 5px;
+}
+/* Input */
+.checkoutProduct__input {
+    cursor: auto;
+    padding-left: 10px;
+}
+/* Input error */
+.checkoutProduct__inputError {
+    border: 1px solid rgba(255, 0, 0, 0.692);
+    box-shadow: rgb(255, 0, 0) 0px 0px 5px 1px;
+}

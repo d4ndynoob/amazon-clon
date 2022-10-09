@@ -1,0 +1,84 @@
+.header {
+    height: 60px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/* Logo */
+.header__logo {
+    width: 100px;
+    margin: 0 20px;
+    margin-top: 18px;
+    cursor: pointer;
+    object-fit: contain;
+}
+/* Box that contains input and icon*/
+.header__search {
+    display: flex;
+    flex: 1;
+}
+/* Input */
+.header__searchInput {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+    outline: 2px solid transparent;
+    width: 100%;
+    border-radius: 4px 0 0 4px;
+    transition-duration: .2s;
+}
+.header__searchInput:focus {
+    outline: 2px solid darkorange;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border-color: transparent; */
+}
+/* Icon */
+.header__searchIcon {
+    background-color: var(--orange);
+    padding: 5px;
+    height: 30px !important;
+    width: 30px !important;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* Nav */
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__link {
+    color: white;
+    text-decoration: none;
+}
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header__optionLineOne {
+    font-size: 10px;
+
+}
+.header__optionLineTwo {
+    font-size: 13px;
+    font-weight: 700;
+}
+/* Basket Container */
+.header__optionBasket {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/* Cart Counter */
+.header__basketCount {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    color: var(--orange);
+}

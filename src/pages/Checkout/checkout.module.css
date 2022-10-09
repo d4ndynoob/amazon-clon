@@ -1,0 +1,68 @@
+.checkout {
+    display: flex;
+    column-gap: 2rem;
+    padding: 0 20px;
+    /* background-color: white; */
+    height: max-content;
+}
+.checkout__titleGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.checkout__title {
+    font-size: 2rem;
+}
+/* Boton de deseleccionar todo */
+.checkout__titleGroup > button {
+    background-color: transparent;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgb(0, 113, 133);
+    cursor: pointer;
+}
+.checkout__titleGroup > button:hover {
+    color: #C7511F;
+}
+.checkout__titleGroup > button:focus {
+    border-color: rgb(0, 113, 133);
+}
+
+.checkout__ad {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.checkout__right {
+    position: sticky;
+    height: max-content;
+    top: 80px;
+}
+.checkout__subtotal {
+    margin-bottom: .5rem;
+}
+.checkout__cart_group {
+    background-color: white;
+    padding: 20px;
+}
+
+/* Empty */
+.checkout__containerEmpty {
+    background-color: white;
+    padding: 20px;
+}
+.checkout__containerEmpty > h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.checkout__containerEmpty > p {
+    font-size: 1rem;
+    color: rgb(29, 29, 29);
+}
